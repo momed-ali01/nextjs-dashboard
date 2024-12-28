@@ -1,8 +1,13 @@
 import AcmeLogo from "@/app/ui/acme-logo"
-import { ArrowRightIcon } from "@heroicons/react/24/outline"
-import Link from "next/link"
-import { lusitana } from "@/app/ui/fonts"
-import Image from "next/image"
+import {
+    ArrowDownCircleIcon,
+    ArrowLongUpIcon,
+    ArrowRightIcon,
+    LinkIcon,
+} from "@heroicons/react/24/outline";
+import Link from "next/link";
+import { lusitana } from "@/app/ui/fonts";
+import Image from "next/image";
 
 export default function Page() {
     return (
@@ -17,13 +22,14 @@ export default function Page() {
                     >
                         <div className="relative h-0 w-0 border-b-[26px] border-l-[15px] border-r-[15px] border-b-black border-l-transparent border-r-transparent" />
                         <strong>Welcome to Acme.</strong> This is the example
-                        for the{" "}
-                        <a
+                        for the
+                        <Link
                             href="https://nextjs.org/learn/"
+                            target="_blank"
                             className="text-blue-500"
                         >
                             Next.js Learn Course
-                        </a>
+                        </Link>
                         , brought to you by Vercel.
                     </p>
                     <Link
@@ -53,5 +59,5 @@ export default function Page() {
                 </div>
             </div>
         </main>
-    )
+    );
 }
